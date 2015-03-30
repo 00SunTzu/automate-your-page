@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Project 2 - Monique Dwyer</title>
+	<!-- I am including a link to a separate CSS file which contains all the style elements I want applied to my HTML page-->
+	<link rel="stylesheet" type="text/css" href="Project1.css">
+</head>
+<body>
+	<div id="TOC">
+		<h1 style="color: blue">Introduction to Programming Nanodegree</h1>
+		<h1>Table of Content</h1>
+		<ol type="I">
+			<li>Project 0 - Getting Started with HTML
+				<ol start="0">
+					<li><a href="#lesson0">How Learning to Code Works</a>
+						<ul>
+							<li><a href="#topic0.1">How Learning Anything Works</a></li>
+							<li><a href="#topic0.2">Avoiding Repetition</a></li>
+						</ul>
+					</li>
+					<li><a href="#lesson1">The Basics of the Web and HTML</a>
+						<ul>
+							<li><a href="#topic1.1">The World Wide Web</a></li>
+							<li><a href="#topic1.2">Webpage Overview</a></li>
+							<li><a href="#topic1.3">HTML Fundamentals</a></li>
+							<li><a href="#topic1.4">Computers are Stupid</a></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li>Project 1: Make Your Own Webpage - Due by 30 March 2015
+					<ol start="2">
+						<li><a href="#lesson2">Creating a Structured Document with HTML</a>
+							<ul>
+								<li><a href="#topic2.1">Key Components of a Webpage</a></li>
+								<li><a href="#topic2.2">Designing a Webpage - Boxify!</a></li>
+							</ul>
+						</li>
+						<li><a href="#lesson3">Cascading Style Sheets</a>
+							<ul>
+								<li><a href="#topic3.1">What is CSS and how does it work?</a></li>
+								<li><a href="#topic3.2">How is CSS included on a web page?</a></li>
+								<li><a href="#topic3.3">Cycle of Development</a></li>
+								<li><a href="#topic3.4">Box Sizing and Positioning & The Box Model</a></li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+			<li>Project 2: Automate Your Page - Due by 30 March 2015
+				<ol start="4">
+					<li><a href="#lesson4">Telling Computers What to Do</a>
+						<ul>
+							<li><a href="#topic4.1">Introduction to "Serious" Programming</a></li>
+							<li><a href="#topic4.2">Variables and Strings</a></li>
+							<li><a href="#topic4.3">Input -> Function -> Output</a></a></li>
+							<li><a href="#topic4.4">Decisions and Repetition: If and While</a></li>
+							<li><a href="#topic4.5">Structured Data: Lists and For Loops</a></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li>Project 3: Add Videos to Your Page- Due by 27 April 2015
+				<!-- <ol start="?">
+					<li><a href="#lesson?">??</a>
+						<ul>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+						</ul>
+					</li>
+				</ol> -->
+			</li>
+			<li>Project 4: Let Anyone Modify Your Page - Due by 1 June 2015
+				<!-- <ol start="?">
+					<li><a href="#lesson?">??</a>
+						<ul>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+						</ul>
+					</li>
+				</ol> -->
+			</li>
+			<li>Project 5: Choose Your Next Steps - Due by 10 August 2015
+				<!-- <ol start="?">
+					<li><a href="#lesson?">??</a>
+						<ul>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+							<li><a href="#topic?.?">??</a></li>
+						</ul>
+					</li>
+				</ol> -->
+			</li>
+		</ol>
+	</div>
+	
+	<div class="mainContent">
+		<!-- Lesson 0 Notes -->
+		<div class="lesson">
+			<h2><a  id="lesson0">How Learning to Code Works</a></h2>
+			
+			<div class="topic">
+				<span><a id="topic0.1">How Learning Anything works</a></span>
+				<div class="topicContent">
+					<p>Learning is a journey from being a <b>Novice</b> to becoming an <b>Expert</b> which we can consider to have four destinct phases.</p>
+					<h4>The Stages of Expertise</h4>
+						<ol start="0">
+							<li><b>Ignorance</b> - No knowledge of the subject at all.</li>
+							<li><b>Awareness</b> - The point at which you become aware that a subject exists.</li>
+							<li><b>Ability</b> - When you can do something but it requires effort and focus to achieve.</li>
+							<li><b>Fluency</b> - Knowledge so complete that it comes as easily as breathing.</li>
+						</ol>
+						<p>The journey is an interesting one BUT the time taken from one stage to the next varies significantly depending on the complexity of the subject in question.</p>
+						<ul>
+							<li>From Ignorance to Awareness - a journey measured in seconds/minutes</li>
+							<li>From Awareness to Ability - a journey measured in minutes/days.</li>
+							<li>From Ability to Expert - a journey measured in days/weeks/months/years!!!</li>
+						</ul>
+						<p><b>Remember:</b> Use the online resources available to you (<em>forums, etc.</em>) to ask for help if you are struggling - Don't give up! <b>You CAN do this!</b>'</p>
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic0.2">Avoiding Repetition!</a></span>
+				<div class="topicContent">
+					<h1>Most Important Rule of Coding<br>Avoid Repetition!!!</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Lesson 1 Notes -->
+		<div class="lesson">
+			<h2><a id="lesson1">The Basics of the Web and HTML</a></h2>
+			
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic1.1">The World Wide Web</a></span>
+				<div class="topicContent">
+					<p>The World Wide Web is a collection of webpages, images and interactive content (<em>Web applications</em>) 
+					connected together by links (<em><b>Hyperlink</b>s - commonly abbreviated to link</em>)  .</p>
+					<h4>Key Components of the Web:</h4>
+					<ul>
+						<li>The Browser on My Computer</li>
+						<li>The  Webserver - located 'out there' - on the Cloud</li>
+					</ul>
+					<p>These two elements communicate via <b>HTTP</b> (<em><b>H</b>yper <b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol</em>).  The browser sends a request and the webserver returns the requested webpage.</p>
+					<h4>How does the webserver know which page to the browser?</h4>
+					<p>The browser requests a page by clicking on a Hyperlink which contains a reference to a <b>URL</b> (<em><b>U</b>niorm <b>R</b>esource <b>L</b>ocator</em>) which is <b>unique</b> to each page on the web.</p>
+				</div>
+			</div> <!-- of Topic -->
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic1.2">Webpage Overview</a></span>
+				<div class="topicContent">
+					<p>Webpages are documents of type <b>HTML</b> (<em><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</em>).</p>
+					<p>HTML comprises four key types of things:</p>
+					<ol>
+						<li>text (what you see)</li>
+						<li>markup (what it looks like)</li>
+						<li>references to other documents (video and images))</li>
+						<li>links to other pages</li>
+					</ol>
+				</div>
+			</div> <!-- of Topic -->
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic1.3">HTML Fundamentals</a></span>
+				<div class="topicContent">
+					<p>The content of an HTML Document is made up of Elements.</p>
+					<p>All Elements are rectangluar in shape.</p>
+					<p>HTML &lt;tags&gt; are used to markup these Elements.</p>
+					<p>These &lt;tags&gt; tell the browser how to handle the individual elements of the webpage.</p>
+					<dl>
+						<dt>Most Elements are written with an opening tag, content and a closing tag.</dt>
+							<dd>eg. <b>&lt;tag&gt;content&lt;/tag&gt;.</b></dd>
+						<dt>In addition, some elements (like images and links) can have (an) attribute(s) which have names and values.</dt>
+							<dd>eg. <b>&lt;tag attributeName="value"&gt;content&lt;/tag&gt;</b></dd>
+						<dt>There are also a number of tags which are referred to as <b>void tags</b>.  These tags don't have either content or a closing tag.</dt>
+							<dd>Examples:</dd>
+							<dd><b>The image element: &lt;img src="<em>url</em>" alt="text" &gt;</b></dd>
+							<dd>(note: the 'alt' attribute is not compulsory but is important as it is what will be displayed if there is an error/break in the link to the image url.  It is also helpful for blind users.)</dd>
+							<dd><b>The Line Break element: &lt;br&gt;</b></dd>
+					</dl>
+					<h4>There are two major types or elements:</h4>
+					<dl style="list-style: disc">
+						<dt><b>Inline Elements</b></dt>
+							<dd>Simple in nature and have only content and occupy only the space they need.</dd>
+						<dt><b>Block Elements</b></dt>
+							<dd>Contained within a virtual box and have height and width attributes as well as other potential. <br> <b><em>By default they occupy the full width of the webpage</em></b>.</dd>
+					</dl>
+				</div>
+			</div> <!-- of Topic -->
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic1.4">Computers are Stupid</a></span>
+				<div class="topicContent">
+					<table>
+						<tr>
+							<td>
+								<p>Like my brother Mark, computers are stupid, they do what you ask ... nothing more, nothing less.</p>
+								<p>Remember, you are far smarter than the computer, it will only do exactly what you ask it.  It has no ability to make a 'best guess' as most humans can if it receives a slightly ambiguous/incorrect instructrution.</p>
+								<p><b>So remember:</b> Exact instructions (<em><b>syntax</b></em>) must be used.  Small <b>typos will NOT be forgiven</b>.</p>
+							</td>
+							<td>
+								<p>Mark <span style="color: green"><em>a serious teenage wiseass at the time</em></span> asks:
+								''Mum, more tea?''<br>
+								'Yes, please' she replies.<br>
+								Mark proceeds to pour tea all over the table.<br>
+								'What do you think you're doing?' Mum demands.<br>
+								'You never said you wanted it in a cup' was the too clever reply.</p>
+								<p>Lesson learned!!</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div> <!-- of Topic -->
+		</div> <!-- of Lesson -->
+
+		<!-- Lesson 2 Notes -->
+		<div class="lesson">
+			<h2><a  id="lesson2">Creating a Structured Document with HTML</a></h2>
+			
+			<div class="topic">
+				<span><a id="topic2.1">Key Components of a Webpage</a></span>
+				<div class="topicContent">
+					<p>A webpage can be likened to a house.</p>
+					<dl>
+						<dt><b>HTML</b></dt><dd>representing the <em>Structure</em> and <em>Content</em></dd>
+						<dt><b>CSS</b></dt><dd>representing the decorative <em>Style</em></dd>
+						<dt><b>Javascript</b></dt><dd>representing the interactive elements within, eg. Garage Remote 
+						<em>(beyond the scope of this course)</em></dd>
+					</dl>
+					<p>Each of the items above are <b>Languages</b>, they have their own <em>Syntax and Rules</em>.</p>
+					<p>There are rules to how websites behave.</p>
+					<ul>
+						<li><b>HTML contains the Structure and Content of the webpage</b></li>
+						<li>HTML uses &lt;tags&gt; to create elements.</li>
+						<li>HTML elements are rectangular in shape (<em>can be considered to be boxes</em>)</li>
+						<li><b>HTML has a tree-like structure</b>. HTML element content can be simple text, images or other elements (<em>boxes within boxes</em>).  Similar to a family tree elements within the tree can have child elements and/or parent elements.</li>
+						<li><b>CSS</b> (<em><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</em>) <b>contains the style of the webpage</b></li>
+					</ul>
+					<p>How a webpage is displayed by the browser is controlled by the <b>DOM</b> <em>(<b>D</b>ocument <b>O</b>bject <b>M</b>odel</em>).</p>
+					<p><b>DOM</b> - a cross-platform and language-independent convention for representing and interacting with objects in HTML.</p>
+					<p>The DOM uses the HTML elements to build the tree-like structure of the page.</p>
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic2.2">Designing a Webpage - Boxify!</a></span>
+				<div class="topicContent">
+					<p>When given a mock-up of a webpage, start looking for boxes.</p>
+					<p>HTML elements are boxes so ..... find the elements!</p>
+					<ul>
+						<li>Obvious first element - the whole page = &lt;body&gt;</li>
+						<li>Keep dividing up the page into boxes (within boxes) until everything on the page is reduced down to the most basic element types - eg. paragraphs or images</li>
+					</ul>
+					<p>How easy is that? Simples!! <em>(in joke - look up <b>Alexander the Meerkat</b> much loved by my son Matthew!)</em></p>
+				</div>
+			</div>			
+		</div>
+		
+		<!-- Lesson 3 Notes -->
+		<div class="lesson" >
+			<h2><a id="lesson3">Cascading Style Sheets</a></h2>
+			
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic3.1">What is CSS and how does it work?</a></span>
+				<div class="topicContent">
+						<p>CSS is code written to control the 'style' of HTML elements.</p>
+						<p>Styles are applied to Element types.  The element types are all the predefined elements of HTML + any user-defined types known as classes.</p>
+						<p>In order for CSS to know which styles to apply to which elements we need to use a <b><em>selector</em></b>. For example: <b>h1</b> or <b>div</b><br>
+						followed by the attributes and values we want applied to those elements contained within curly braces.<br><br><em>
+						h1 {<br>
+							&nbsp; &nbsp; background-color : black;<br>
+							&nbsp; &nbsp; color: white:<br>
+						}</em></p>
+				</div>
+			</div>
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic3.2">How is CSS included on a web page?</a></span>
+				<div class="topicContent">
+					<p>There are 3 methods for applying styles with CSS.</p>
+					<ol>
+						<li>
+							<b>In-line in your HTML</b>
+							<dl>
+								<dt>Should only be considered if there is some style attribute that needs to be applied which is exclusive to that particlar instance of that particular class/element. Otherwise it is an extremely inefficient method of coding style information.</dt>
+									<dd>Within the body of your HTML <b>&lt;tag style="background-color: green"&gt;content&lt;tag&gt;</b></dd>
+							</dl>
+						</li>
+						<li>
+							<b>Include the main block of your CSS within the &lt;head&gt; element of your HTML.</b>
+							<dl>
+								<dt>Can be considered when the website in question has a very small number of HTML files. </dt>
+									<dd>Add a <b>&lt;style&gt;</b> element within the <b>&lt;head&gt;</b> element.  The content part of the <b>&lt;style&gt;content&lt;/style&gt;</b> element should be entered as you would if you were creating a separate CSS file.</dd>
+							</dl>
+						</li>
+						<li>
+							<b>Link your HTML to a separate CSS file within the &lt;head&gt; element of your HTML</b>
+							<dl>
+								<dt>Write a separate CSS file and link it within the <b>&lt;head&gt;</b> element of your HTML.  This is the preferred method when dealing with larger projects as it enables you to put all the standardized style features in one place and apply them across multiple pages giving a uniform look and feel to a whole website.  From an efficiency point of view too, the whole look and feel of a website can be updated extremely quickly by making changes on the master styles contained within the website CSS file(s).</dt>
+									<dd>Add a <b>&lt;link&gt;</b> element within your <b>&lt;head&gt;</b> element of your HTML on each page of your website.</dd>
+									<dd><b>&lt;head&gt;</b></dd>
+									<dd><b>&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="myStyleSheet.css"&gt;</b></dd>
+									<dd><b>&lt;/head&gt;</b></dd>
+									<dd>Now in the same folder have a file called <em>myStyleSheet.css</em> which contains your CSS.</dd>
+							</dl>
+						</li>
+					</ol>
+					<p>There are valid reasons for using each of these methods.</p>
+				</div>
+			</div>
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic3.3">Cycle of Development</a></span>
+				<div class="topicContent">	
+					<h4>Code, Test, Refine</h4>
+						<ol>
+							<li>Look for natural boxes</li>
+							<li>Look for repeated styles & semantic elements</li>
+							<li>Write your HTML</li>
+							<li>Apply styles <em>(from <b>BIGGEST</b> to smallest)</em></li>
+							<li>Fix Things</li>
+						</ol>
+					<p>Keep repeating steps 3 and 4 until the result looks like your page mock.</p>
+					<p>Use validation tools to check your HTML and CSS to ensure that your code complies to current standards</p>
+					<p>To verify HTML: <a href="http://validator.w3.org/#validate_by_input" >http://validator.w3.org/#validate_by_input</a><br>
+					To verify CSS: <a href="http://www.css-validator.org/#validate_by_input">http://www.css-validator.org/#validate_by_input</a></p>
+				</div>
+			</div>
+			<!-- Topic -->
+			<div class="topic">
+				<span><a id="topic3.4">Box Sizing and Positioning & The Box Model</a></span>
+				<div class="topicContent">
+					<table><tr><td><img src="images/Project1BoxModel.png" alt="Box Model" ></td>
+						<td><p>An understanding the box model is important to facilitate box sizing and positioning.</p>
+							<p>Use of attibute 'display: flex' is invaluable in allowing for more flexible placing of block elements within parent containers.</p></td></tr></table>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- Lesson ? Notes -->
+		<div class="lesson">
+			<h2><a  id="lesson4">Telling Computers What to Do</a></h2>
+			
+			<div class="topic">
+				<span><a id="topic4.1">Introduction to "Serious" Programming</a></span>
+				<div class="topicContent">
+				<ul>
+					<li><b>Computers</b> are machines which can execute programs.</li>
+					<li><b>Programs</b> are <em>precise sequences of steps</em> that computers can follows to achieve something useful.</li>
+				</ul>
+				<p><b>Python</b> is a <em>High Level Language</em>. It is itself a program called an interpreter which follows the instructions in its code to follow the instructions wrtten in the programs written in Python.  This will be done within a browser.</p>
+				<h4>Thinking Like a Programmer</h4>
+				<ul>
+					<li><b>Procedural Thinking</b> - following the instructions in your code</li>
+					<li><b>Technological empathy</b> - understanding how computers and programs <em>work</em>.</li>
+					<li><b>Abstract Thinking</b> - grouping Python (<em>the interpreter</em>), browsers and Python code as different versions of the same thing.</li>
+				</ul>
+				<p>Just like human languages, programs have grammar referred to as Syntax.  The Syntax specifies what can and cannot be done.</p>
+				<p><b>Python expressions </b> are legal Python statements.  They must ABIDE BY THE RULES of syntax EXACTLY <b>or they will not work</b>.</p>
+				<h4>Comments</h4>
+				<p>Python programs can contain comments.  Any text to the right of a <span class="codeSegment">#</span> to the end of a line is considered to be a comment as is ignored by the Python interpreter.</p>
+				<h4>Use of Indentation</h4>
+				<p>Correct use of indentation is VERY important within Python.  Failure to use it correctly will have unpredicatable results when using <span class="codeSegment">if</span> or <span class="codeSegment">while ... do</span> blocks.</p>
+					<!-- <div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div> -->
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic4.2">Variables and Strings</a></span>
+				<div class="topicContent">
+					<h4>Variables</h4>
+					<ul>
+						<li>What is a <b>variable</b>?</li>
+							<ul>
+								<li>A variable is a name we assign a value which can be used instead of that value in other Python expressions.</li>
+									<ul>
+										<li>the value can be a any valid Python expression.</li>
+										<li>Variable values can vary.</li>
+									</ul>
+							</ul>
+						<li>Variables are used to make code more readable and to facilitate reuse.</li>
+						<li>What does it mean to <b>assign</b> a value to a variable?</li>
+							<ul>
+								<li>When we assign a value to a variable we are actually 'putting the value into the variable'.</li>
+							</ul>
+						<li>What is the difference between what <span class="codeSegment">=</span> means in mathematics versus programming.<br>
+						What's the difference between <span class="codeSegment">2 + 3 = 5</span> and <span class="codeSegment">myVariable = 5</span>?</li>
+							<ul>
+								<li>In mathematics <span class="codeSegment">=</span> means the value on the left 'equals' the value on the right.</li>
+								<li>In programming <span class="codeSegment">=</span> means 'assign' the value on the right to the variable on the left.</li>
+							</ul>
+						<li>Variables can contain <b>Strings</b>.</li>
+					</ul>
+					
+					<h4>Strings</h4>
+					<ul>
+						<li>What is a <b>String</b>?</li>
+							<ul>
+								<li>A string is a sequences of characters surrounded by quotes <br>(<em>either single or double- it makes no difference so long as they are a pair!</em>)</li>
+							</ul>
+						<li>What is the difference between what <span class="codeSegment">+</span> means in mathematics versus programming.<br>
+						What's the difference between <span class="codeSegment">2 + 3</span> and <span class="codeSegment">"2" + "3"</span>?</li>
+							<ul>
+								<li>In mathematics <span class="codeSegment">+</span> means the product of 2 + 3 which would return the value 5.</li>
+								<li>In programming <span class="codeSegment">+</span> means the concatination of the strings "2" and "3" which would return the string "23".</li>
+							</ul>
+						<li>Each character within a string has a position (<em>called its index</em>).</li>
+							<ul>
+								<li>First character index = 0.</li>
+								<li>Last character index = -1.</li>
+							</ul>
+						<li>Parts (<em>ranges from one point to another</em>) of a string can be accessed by using the index of the start and end position(s):</li>
+							<ul>
+								<li>string[:-1] - returns the string from the start to index -1 (<em>the end!</em>)</li>
+								<li>string[0:] - returns the string from index [0] (<em>the start!</em>) to the end</li>
+								<li>string[:] - returns the string from the start to the end</li>
+								<li>expressions can be used in place of values for the index numbers.</li>
+								<li>string[1] will return an error if string has less than 2 characters!</li>
+							</ul>
+						<li>It is possible to search for a sub-string within a sequence of characters using the <b>Function</b> <span class="codeSegment">.find("<em>sub-string</em>")</span>.  The index of the start of the first occurance of the sub-string will be output by the Function <span class="codeSegment">.find("<em>sub-string</em>")</span>.</li>
+							<ul>
+								<li>By specifying an additional parameter you can search for the sub-string occurance <em><b>after</b></em> a particular index position. </li>
+							</ul>
+					</ul>
+					<!-- <div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div> -->
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic4.3">Input -> Function -> Output</a></span>
+				<div class="topicContent">
+				<h4>Functions</h4>
+				<ul>
+					<li>Functions can be used to reduce coding where something that will be done repeatedly can be reduced to a single call instead of needing to repeat multiple statments to achieve each time.</li>
+					<li>We pass 'Inputs' known as <b>arguments/parameters</b> "Into" Functions<br>and get 'Outputs' known as <b>return values</b> "Out" of Functions.</li>
+					<li>Functions are made with a <br>
+					<span class="codeSegment">def <em>functionName</em>(<em>input1, input2, ...., inputn</em>):<br><em>python statement(s)</em><br>return <em>output</em></span><br>
+					If you forget to include a return statement in your definition you will get no output from your function.</li>
+					<li>To use a Function you only need to code it into your python statement with the correct number and type of arguments.<br>eg <span class="codeSegment">print functionName(input1, input2)</span> and the return value of the Function will be output for use in the statement.</li>
+					<li>Variables used within a Function are independent of the rest of the program.  Inputs and Output are treated as values and do not overwrite existing variables even if the same names are used.  To change the variable outside of the function an assignment statement would be needed.</li>
+				</ul>
+					<!-- <div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div> -->
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic4.4">Decisions and Repetition: If and While</a></span>
+				<div class="topicContent">
+					<h4>Comparing Things - Using <span class="codeSegment">if</span></h4>
+					<p>Items (variables or values) of the same types can be compared. The result of any comparison test is either 'True' or 'False'. These are referred to as Boolean values.</p>
+					<p>We can use normal mathematical comparison operators &lt; (<em>less than</em>), &gt; (<em>greater than</em>), &lt;= (<em>less than or equal to</em>), &gt;= (<em>greater than or equal to</em>), != (<em>not equal to</em>).  The addition of the ! in front of any operator will change the meaning to 'Not <em>whatever the operator was before</em>'. To test whether something is 'equal to' we use a double == (this helps to differentiate it from the assignment operator!)</p>
+					<p>Syntax for an if statement is thus:<br>
+					<span class="codeSegment">if <em>&lt;test&gt;</em>:<br>&nbsp;&nbsp;&nbsp;<em>&lt;block&gt;</em></span> (this block would only execute if the test evaluates to 'True')<br>
+					<span class="codeSegment">else:</span> (this is an optional extra if you want a second block of code to execute when the test evaluates to 'False')<br>
+					&nbsp;&nbsp;&nbsp;<span class="codeSegment"><em>&lt;block&gt;</em></span></p>
+					<p>We can combine tests by using <span class="codeSegment">or</span> or <span class="codeSegment">and</span> operators.</p>
+					<p>Python will not evaluate a second test in an '<span class="codeSegment">or</span> test' situation if the first test evaluates to 'True'.  This is a useful feature which we will use to our advantage.</p>
+					<h4>Comparing Things - Using <span class="codeSegment">while</span></h4>
+					<p>Syntax for a while statement is thus:<br>
+					<span class="codeSegment">while <em>&lt;test&gt;</em>:<br>&nbsp;&nbsp;&nbsp;<em>&lt;block&gt;</em></span> (this block will be repeatedly executed for as long as the test evaluates to 'True')</p>
+					<p>Use of a <b>Break Test</b> within our <span class="codeSegment">while</span> block allows us to 'break out' of the loop if the condition evaluates to 'True'.</p>
+					<p>We can combine tests by using <span class="codeSegment">or</span> or <span class="codeSegment">and</span> operators.</p>
+					<!-- <div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div> -->
+				</div>
+			</div>
+			<div class="topic">
+				<span><a id="topic4.5">Structured Data: Lists and For Loops</a></span>
+				<div class="topicContent">
+				<h4>Lists</h4>
+				<p><b>List</b>s are sequences of 'elements' (characters, numbers, other lists).</p>
+				<p>A <span class="codeSegment">string</span> is a sequence of characters bound by quotes, a <span class="codeSegment">list</span> is a sequence of elements bound by square brackets whose elements are separated by commas.</p>
+				<p>Lists can contain a mixture of element types - strings, individual characters, numbers and a list can itself be another element</p>
+				<p>Lists can be accessed in much the same way that strings are.</p>
+				<ul>
+					<p>Examples using string svar ='Howdy' list lvar = ['H','o','w','d','y']</p>
+					<li>particular elements/characters: svar[0] and lvar[0] both contain 'H'
+					<li>ranges of elements/characters: svar[2:4] contains the string 'wd' byt lvar[2:4] contains the list ['w','d']</li>
+				</ul>
+				<h4>Mutation and Aliasing</h4>
+				<p><b>Mutation</b> allows us to <em>modify</em> an element of a list object without creating a new list object.  Strings and numbers are never modified.  New strings or numbers get created and assigned as needed while their old values are simply no longer accessible to us.</p>
+				<p><b>Aliasing</b> is as you would expect - an alias is given to an list - another name by which the object is known.  Changing the object using either name will result in the same change - IT IS THE SAME OBJECT you are changing!!</p>
+				<h4>Appending and Concatinating</h4>
+				<p>Lists can be added to using the apend method which adds a single new element to the end of the list.</p>
+				<p>Lists can also be concatinated using the + operator which creates a new list containing all the elements of the first list with the elements of the second list added on.</p>
+				<h4>len(&lt;list&gt;)</h4>
+				len will return the number of elements in a list, the number of characters in a sting
+				<h4>Loops</h4>
+				<p>Syntax:<br><span class="codeSegment">for <em>&lt;name&gt;</em> in &lt;list&gt;:<br>
+				&nbsp;&nbsp;&nbsp;&lt;block&gt;</span></p>
+				<p>This code allows us to perform the same block of code to each element of a list.  The element is assigned to variable <em>name</em> as the block commences.</p>
+				<p><span class="codeSegment">&lt;list&gt;.index(&lt;value&gt;)</span>- gives index of first occurance of <em>value</em> in <em>list</em>. Errors if no occurance found.<p>
+				<p><span class="codeSegment">&lt;value&gt; in &lt;list&gt; </span>- gives 'True' if <em>value</em> occurs within <em>list</em>.</p>
+				<p><span class="codeSegment">&lt;value&gt; not in &lt;list&gt;</span> - can be used as negative test too.</p>
+				<!-- 	<div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div> -->
+				</div>
+			</div>			
+		</div>
+		
+		<!-- Lesson ? Notes -->
+		<!-- <div class="lesson">
+			<h2><a  id="lesson?">??</a></h2>
+			
+			<div class="topic">
+				<span><a id="topic?">??</a></span>
+				<div class="topicContent">
+					<div class="sideBySide">
+						<div class="firstColumn"></div> 
+						<div class="lastColumn"></div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</body>
